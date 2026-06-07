@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY BABY — Pusat Perlengkapan Bayi Terlengkap di Kalimantan</title>
+<meta name="description" content="MY BABY — Pusat perlengkapan bayi terlengkap di Kalimantan sejak 2007. Pakaian, perlengkapan tidur, botol & makan, kesehatan, stroller, dan mainan edukasi. 3 cabang: Berau, Bulungan, Malinau.">
+<meta name="theme-color" content="#F8B4C0">
+
+<!-- Open Graph -->
+<meta property="og:title" content="MY BABY — Perlengkapan Bayi Terlengkap di Kalimantan">
+<meta property="og:description" content="Sejak 2007. Pakaian, perlengkapan tidur, botol, kesehatan, stroller & mainan edukasi. 3 cabang di Kalimantan Utara & Timur.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/toko/toko-berau-sign.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   MY BABY — Premium Design System
+   Luxury minimalism · warm · 8px rhythm · Nunito
+   ============================================================ */
+:root{
+  /* Brand (locked) */
+  --pink:#F8B4C0;
+  --pink-deep:#E8899A;
+  --pink-soft:#FDEEF1;
+  --pink-mist:#FBF6F4;
+  --cream:#FFFAF5;
+  --cream-2:#FCF4EC;
+  --cream-3:#F7ECE0;
+  --gold:#D4AF37;
+  --gold-soft:#E7D49B;
+  --charcoal:#4A4A4A;
+  --charcoal-2:#6B6764;
+  --charcoal-3:#9A938C;
+  --ink:#2E2A28;
+  --white:#FFFFFF;
+
+  /* Spacing — 8px grid */
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:40px; --s6:48px;
+  --s8:64px; --s10:80px; --s12:96px; --s14:112px; --s16:128px; --s20:160px;
+
+  /* Radius */
+  --r-sm:12px; --r-md:16px; --r-lg:24px; --r-xl:32px; --r-2xl:40px; --r-pill:999px;
+
+  /* Shadows — soft, layered, warm */
+  --sh-xs:0 1px 2px rgba(74,74,74,.05);
+  --sh-sm:0 2px 8px rgba(74,74,74,.06),0 1px 2px rgba(74,74,74,.04);
+  --sh-md:0 8px 24px rgba(74,74,74,.08),0 2px 6px rgba(74,74,74,.05);
+  --sh-lg:0 18px 48px rgba(74,74,74,.10),0 6px 16px rgba(74,74,74,.06);
+  --sh-xl:0 32px 72px rgba(74,74,74,.13),0 12px 28px rgba(74,74,74,.07);
+  --glow-pink:0 12px 32px rgba(232,137,154,.30);
+  --glow-wa:0 12px 30px rgba(37,211,102,.30);
+
+  --maxw:1200px;
+  --maxw-narrow:760px;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ease-soft:cubic-bezier(.4,0,.2,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Nunito',sans-serif;
+  color:var(--charcoal);
+  background-color:var(--cream);
+  /* Motif: polka dots halus (warm pink) di atas cream — tekstur lembut, premium */
+  background-image:radial-gradient(circle at center, rgba(232,137,154,.07) 1.5px, transparent 1.6px);
+  background-size:26px 26px;
+  background-position:0 0;
+  line-height:1.65;
+  font-weight:500;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* page-load fade-in */
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+body{animation:pageIn .6s ease-in-out both}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--s4)}
+section{position:relative}
+
+/* ============================================================
+   TYPOGRAPHY — clear premium hierarchy
+   ============================================================ */
+h1,h2,h3,h4{color:var(--ink);font-weight:800;letter-spacing:-.02em;line-height:1.12}
+.display{
+  font-size:clamp(2.4rem,5.4vw,4rem);
+  font-weight:900;line-height:1.08;letter-spacing:-.03em;
+}
+.h-sec{
+  font-size:clamp(2rem,4vw,3.1rem);
+  font-weight:900;letter-spacing:-.025em;line-height:1.12;
+}
+.lead{
+  font-size:clamp(1.05rem,1.6vw,1.2rem);
+  line-height:1.7;color:var(--charcoal-2);font-weight:500;
+}
+
+/* eyebrow / kicker */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--charcoal-3);
+}
+.eyebrow::before{content:"";width:24px;height:1.5px;background:var(--gold);border-radius:2px}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::after{content:"";width:24px;height:1.5px;background:var(--gold);border-radius:2px}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:inherit;font-weight:800;font-size:1rem;cursor:pointer;border:none;
+  padding:16px 30px;border-radius:var(--r-md);
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease),background .3s;
+  white-space:nowrap;line-height:1;
+}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:#25D366;color:#fff;box-shadow:var(--glow-wa)}
+.btn-wa:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 18px 40px rgba(37,211,102,.42)}
+.btn-dark{background:var(--ink);color:var(--cream)}
+.btn-dark:hover{transform:translateY(-2px) scale(1.03);box-shadow:var(--sh-lg)}
+.btn-ghost{background:transparent;color:var(--charcoal);border:1.5px solid rgba(74,74,74,.18)}
+.btn-ghost:hover{border-color:var(--pink-deep);color:var(--pink-deep);transform:translateY(-2px);box-shadow:var(--glow-pink)}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+header.nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:20px 0;transition:background .5s var(--ease-soft),box-shadow .5s,padding .5s var(--ease-soft);
+}
+header.nav.scrolled{
+  background:rgba(255,250,245,.82);backdrop-filter:blur(20px) saturate(1.1);
+  -webkit-backdrop-filter:blur(20px) saturate(1.1);
+  box-shadow:0 1px 0 rgba(74,74,74,.05),var(--sh-sm);padding:10px 0;
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;flex:none}
+.brand-logo{height:56px;width:auto;display:block;transition:height .5s var(--ease-soft)}
+header.nav.scrolled .brand-logo{height:46px}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{
+  position:relative;padding:10px 18px;border-radius:var(--r-pill);
+  font-weight:700;font-size:.95rem;color:var(--charcoal-2);
+  transition:color .3s;
+}
+.nav-links a::after{
+  content:"";position:absolute;left:18px;right:18px;bottom:6px;height:2px;
+  background:var(--pink-deep);border-radius:2px;transform:scaleX(0);transform-origin:center;
+  transition:transform .4s var(--ease);
+}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-links a.active{color:var(--ink)}
+.nav-cta{margin-left:14px}
+.nav-cta .btn{padding:11px 22px;font-size:.92rem}
+.burger{display:none;background:none;border:none;cursor:pointer;width:46px;height:46px;border-radius:var(--r-sm);align-items:center;justify-content:center}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:3px;transition:.4s var(--ease);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:22px;height:2px;background:var(--ink);border-radius:3px;transition:.4s var(--ease)}
+.burger span::before{top:-7px}.burger span::after{top:7px}
+.burger.open span{background:transparent}
+.burger.open span::before{top:0;transform:rotate(45deg)}
+.burger.open span::after{top:0;transform:rotate(-45deg)}
+
+/* drawer */
+.drawer{
+  position:fixed;inset:0 0 0 auto;width:min(84vw,340px);z-index:999;
+  background:var(--cream);box-shadow:var(--sh-xl);
+  transform:translateX(105%);transition:transform .55s var(--ease);
+  padding:104px var(--s4) var(--s5);display:flex;flex-direction:column;gap:4px;
+}
+.drawer.open{transform:translateX(0)}
+.drawer a{padding:16px 18px;border-radius:var(--r-md);font-weight:800;font-size:1.05rem;color:var(--ink);transition:background .3s}
+.drawer a:hover{background:var(--pink-soft)}
+.drawer .btn{margin-top:20px}
+.scrim{position:fixed;inset:0;background:rgba(46,42,40,.42);z-index:998;opacity:0;visibility:hidden;transition:.45s;backdrop-filter:blur(2px)}
+.scrim.open{opacity:1;visibility:visible}
+
+/* ============================================================
+   HERO — asymmetric, spacious
+   ============================================================ */
+.hero{padding:172px 0 var(--s14);overflow:hidden;position:relative}
+/* hero ambient glow */
+.hero::before{
+  content:"";position:absolute;top:-8%;left:-6%;width:460px;height:460px;border-radius:50%;
+  background:radial-gradient(circle,var(--pink-soft) 0%,transparent 68%);opacity:.5;filter:blur(8px);
+  z-index:0;pointer-events:none;
+}
+.hero>.wrap{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:var(--s10);align-items:center}
+.hero-copy{min-width:0}
+.hero-visual{min-width:0}
+.hero-copy .eyebrow{margin-bottom:var(--s3)}
+.hero h1{margin:0}
+.hero h1 .accent{position:relative;color:var(--pink-deep);white-space:nowrap}
+.hero h1 .accent::after{
+  content:"";position:absolute;left:-1%;right:-1%;bottom:.04em;height:.34em;z-index:-1;
+  background:linear-gradient(90deg,var(--gold-soft),var(--pink));border-radius:var(--r-pill);opacity:.55;transform:rotate(-.8deg);
+}
+.hero-sub{
+  font-size:clamp(1.08rem,1.7vw,1.22rem);color:var(--charcoal-2);
+  margin:var(--s3) 0 var(--s3);font-weight:500;max-width:46ch;line-height:1.75;
+}
+.hero-since{
+  display:inline-flex;align-items:center;gap:10px;font-weight:700;color:var(--charcoal-2);
+  font-size:.92rem;margin-bottom:var(--s5);
+}
+.hero-since svg{width:17px;height:17px;color:var(--gold);flex:none}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s2);margin-bottom:var(--s8)}
+.hero-trustline{display:flex;align-items:center;gap:var(--s4);flex-wrap:wrap}
+.hero-trustline .ti{display:flex;flex-direction:column}
+.hero-trustline .ti b{font-size:2.1rem;font-weight:900;color:var(--ink);line-height:1;letter-spacing:-.03em;font-feature-settings:"tnum"}
+.hero-trustline .ti b i{font-style:normal;color:var(--gold);margin-left:1px}
+.hero-trustline .ti span{font-size:.76rem;color:var(--charcoal-3);font-weight:800;margin-top:8px;letter-spacing:.06em;text-transform:uppercase}
+.hero-trustline .ti-div{width:1px;height:42px;background:linear-gradient(180deg,transparent,rgba(74,74,74,.16),transparent);flex:none}
+
+/* hero visual */
+.hero-visual{position:relative;height:560px}
+.hv-blob{
+  position:absolute;inset:-12% -8% -8% 4%;z-index:0;
+  background:radial-gradient(58% 58% at 68% 32%,var(--pink) 0%,var(--pink-soft) 52%,transparent 74%);
+  filter:blur(8px);opacity:.6;border-radius:50%;
+}
+.hv-main{
+  position:absolute;top:0;right:0;bottom:0;left:9%;z-index:2;
+  border-radius:var(--r-xl);overflow:hidden;
+  box-shadow:var(--sh-xl);border:6px solid #fff;
+}
+.hv-main img{width:100%;height:100%;object-fit:cover;object-position:30% center}
+/* Varian solo: foto utama sendiri, mengisi penuh & seimbang */
+.hv-main-solo{left:0;border-radius:var(--r-xl)}
+.hv-thumb{
+  position:absolute;bottom:2%;left:-3%;z-index:4;
+  width:44%;aspect-ratio:1/1;border-radius:50%;overflow:hidden;
+  box-shadow:var(--sh-xl);border:6px solid #fff;
+}
+.hv-thumb img{width:100%;height:100%;object-fit:cover}
+.hv-thumb::before{
+  content:"";position:absolute;inset:-9px;border-radius:50%;z-index:-1;
+  background:conic-gradient(var(--pink) 0%,var(--gold-soft) 35%,var(--pink-soft) 65%,var(--pink) 100%);
+  opacity:.55;
+}
+.hv-badge{
+  position:absolute;z-index:5;top:9%;right:-2%;background:#fff;border-radius:var(--r-md);
+  box-shadow:var(--sh-lg);padding:14px 18px;display:flex;align-items:center;gap:12px;
+}
+.hv-badge .ring{width:38px;height:38px;border-radius:50%;background:var(--pink-soft);display:grid;place-items:center;flex:none}
+.hv-badge .ring svg{width:21px;height:21px}
+.hv-badge b{display:block;font-weight:900;font-size:.94rem;line-height:1.1;color:var(--ink)}
+.hv-badge span{font-size:.74rem;color:var(--charcoal-3);font-weight:600}
+.hv-pill{
+  position:absolute;z-index:5;bottom:21%;right:-1%;
+  background:var(--ink);color:var(--cream);font-weight:800;font-size:.8rem;
+  padding:10px 16px;border-radius:var(--r-pill);letter-spacing:.01em;
+  box-shadow:var(--sh-md);display:flex;align-items:center;gap:8px;
+}
+.hv-pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--pink);flex:none}
+
+/* float decorative dots — gentle ambient motion */
+.float-dot{position:absolute;border-radius:50%;z-index:1;opacity:.4;animation:floaty 7s ease-in-out infinite}
+.float-dot.fd2{animation-duration:9s;animation-delay:-2s}
+.float-dot.fd3{animation-duration:8s;animation-delay:-4s}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+/* ============================================================
+   HERO CAROUSEL
+   ============================================================ */
+.hv-main img{transition:transform .7s var(--ease),opacity .5s ease}
+.hv-main img.slide-out{opacity:0;transform:translateX(-30px)}
+.hv-main img.slide-in{animation:slideInHero .7s var(--ease) both}
+@keyframes slideInHero{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+
+.hero-dots{
+  position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);
+  display:flex;gap:6px;z-index:10;
+}
+.hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(74,74,74,.25);cursor:pointer;transition:all .4s var(--ease);border:none;padding:0}
+.hero-dot.active{background:var(--pink-deep);width:22px;border-radius:var(--r-pill)}
+
+/* ============================================================
+   KATALOG SLIDE CAROUSEL
+   ============================================================ */
+.cat-card img{transition:transform .8s var(--ease),opacity .0s}
+.cat-card img.slide-out-l{animation:catSlideOutL .35s ease forwards}
+.cat-card img.slide-in-r{animation:catSlideInR .45s var(--ease) both}
+@keyframes catSlideOutL{to{opacity:0;transform:translateX(-18px) scale(.97)}}
+@keyframes catSlideInR{from{opacity:0;transform:translateX(18px) scale(.98)}to{opacity:1;transform:translateX(0) scale(1)}}
+
+/* ============================================================
+   MARQUEE STRIP — slim, refined
+   ============================================================ */
+.strip{background:var(--ink);color:var(--cream);padding:18px 0;overflow:hidden}
+.strip-track{display:flex;gap:var(--s6);width:max-content;animation:scrollx 34s linear infinite;white-space:nowrap}
+.strip-track span{display:inline-flex;align-items:center;gap:var(--s4);font-weight:700;font-size:.92rem;letter-spacing:.04em;color:rgba(255,250,245,.85)}
+.strip-track span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:.8}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+
+/* ============================================================
+   WHY — editorial, asymmetric feature rows
+   ============================================================ */
+.why{padding:var(--s16) 0 var(--s14);position:relative;overflow:hidden}
+/* soft ambient glow — premium depth */
+.why::before{
+  content:"";position:absolute;top:6%;right:-7%;width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,var(--pink) 0%,transparent 70%);opacity:.10;filter:blur(12px);
+  z-index:0;pointer-events:none;
+}
+.why>.wrap{position:relative;z-index:1}
+.sec-head{max-width:var(--maxw-narrow);margin:0 auto var(--s10);text-align:center}
+.sec-head .eyebrow{margin-bottom:var(--s3)}
+.sec-head .lead{margin:var(--s3) auto 0}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3)}
+.why-card{
+  background:#fff;border-radius:var(--r-lg);padding:var(--s6) var(--s5);
+  box-shadow:var(--sh-sm);border:1px solid rgba(74,74,74,.06);
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease);
+  display:flex;gap:var(--s3);align-items:flex-start;
+}
+.why-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
+.why-ico{
+  width:54px;height:54px;border-radius:var(--r-md);flex:none;display:grid;place-items:center;
+  background:var(--pink-soft);color:var(--pink-deep);
+  transition:background .4s,color .4s;
+}
+.why-card:hover .why-ico{background:var(--pink-deep);color:#fff}
+.why-ico svg{width:26px;height:26px}
+.why-card h3{font-size:1.2rem;margin-bottom:8px;font-weight:800}
+.why-card p{font-size:.96rem;color:var(--charcoal-2);line-height:1.65}
+
+/* first card spans wider for rhythm */
+.why-grid .why-card:first-child{grid-column:1 / -1;background:linear-gradient(120deg,var(--pink-soft) 0%,var(--cream) 60%);align-items:center}
+.why-grid .why-card:first-child .why-ico{width:64px;height:64px;background:#fff;box-shadow:var(--sh-sm)}
+.why-grid .why-card:first-child h3{font-size:1.5rem}
+.why-grid .why-card:first-child p{font-size:1.04rem;max-width:62ch}
+
+/* ============================================================
+   KATALOG — gallery feel, generous
+   ============================================================ */
+.katalog{
+  padding:var(--s14) 0;position:relative;
+  background:
+    radial-gradient(circle at center, rgba(232,137,154,.07) 1.5px, transparent 1.6px) 0 0/26px 26px,
+    linear-gradient(180deg,var(--cream) 0%,var(--cream-2) 100%);
+}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.cat-card{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;cursor:pointer;
+  background:#fff;aspect-ratio:4/3.4;padding:6px;
+  border:1px solid rgba(74,74,74,.06);box-shadow:var(--sh-md);
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s;
+}
+.cat-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:var(--glow-pink),var(--sh-lg);border-color:rgba(232,137,154,.4)}
+.cat-card img{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);object-fit:cover;border-radius:calc(var(--r-lg) - 7px);transition:transform .8s var(--ease)}
+.cat-card:hover img{transform:scale(1.06)}
+.cat-overlay{
+  position:absolute;inset:6px;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:var(--s4);color:#fff;border-radius:calc(var(--r-lg) - 7px);overflow:hidden;
+  background:linear-gradient(180deg,rgba(46,38,36,0) 40%,rgba(46,38,36,.28) 62%,rgba(46,38,36,.78) 100%);
+}
+.cat-num{
+  position:absolute;top:16px;left:16px;z-index:3;width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.95);color:var(--pink-deep);font-weight:900;display:grid;place-items:center;font-size:1rem;
+  box-shadow:var(--sh-sm);backdrop-filter:blur(4px);
+}
+.cat-card h3{color:#fff;font-size:1.4rem;font-weight:900;margin-bottom:5px;letter-spacing:-.01em;text-shadow:0 2px 12px rgba(30,20,22,.5)}
+.cat-card p{font-size:.92rem;color:rgba(255,255,255,.92);font-weight:600;margin-bottom:var(--s2);text-shadow:0 1px 8px rgba(30,20,22,.55)}
+.cat-link{
+  display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.9rem;color:#fff;
+  background:#25D366;padding:10px 17px;border-radius:var(--r-pill);align-self:flex-start;
+  box-shadow:var(--glow-wa);transform:translateY(4px);opacity:0;transition:.45s var(--ease);
+}
+.cat-link svg{width:16px;height:16px}
+.cat-card:hover .cat-link{transform:translateY(0);opacity:1}
+.katalog-note{text-align:center;margin-top:var(--s8);font-size:1rem;color:var(--charcoal-2);font-weight:500}
+.katalog-note b{color:var(--ink);font-weight:800}
+
+/* ============================================================
+   CABANG — premium store cards
+   ============================================================ */
+.cabang{padding:var(--s14) 0 var(--s16);position:relative;overflow:hidden}
+/* soft ambient glow — premium depth */
+.cabang::before{
+  content:"";position:absolute;bottom:5%;left:-8%;width:440px;height:440px;border-radius:50%;
+  background:radial-gradient(circle,var(--gold) 0%,transparent 70%);opacity:.09;filter:blur(12px);
+  z-index:0;pointer-events:none;
+}
+.cabang>.wrap{position:relative;z-index:1}
+.family-badge{
+  display:inline-flex;align-items:center;gap:9px;margin-top:var(--s3);
+  padding:9px 18px;border-radius:var(--r-pill);
+  background:#fff;border:1px solid rgba(212,175,55,.3);box-shadow:var(--sh-xs);
+  color:var(--charcoal-2);font-size:.82rem;font-weight:700;
+}
+.family-badge svg{width:15px;height:15px;color:var(--gold);flex:none}
+.family-badge b{color:var(--pink-deep);font-weight:900;margin:0 1px}
+.branch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+.branch-card{
+  background:#fff;border-radius:var(--r-lg);overflow:hidden;
+  box-shadow:var(--sh-md);border:1px solid rgba(74,74,74,.06);
+  display:flex;flex-direction:column;
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease);
+}
+.branch-card:hover{transform:translateY(-6px);box-shadow:var(--sh-xl)}
+.branch-photo{position:relative;aspect-ratio:16/10;overflow:hidden}
+.branch-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.branch-card:hover .branch-photo img{transform:scale(1.05)}
+.branch-tag{
+  position:absolute;top:16px;left:16px;background:rgba(255,255,255,.95);color:var(--pink-deep);
+  font-weight:900;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:7px 14px;border-radius:var(--r-pill);box-shadow:var(--sh-sm);backdrop-filter:blur(4px);
+}
+.branch-body{padding:var(--s5);display:flex;flex-direction:column;flex:1}
+.branch-body h3{font-size:1.32rem;margin-bottom:var(--s2);font-weight:800}
+.branch-hours{
+  display:inline-flex;align-items:center;gap:8px;background:var(--pink-soft);color:var(--pink-deep);
+  font-weight:800;font-size:.78rem;padding:7px 14px;border-radius:var(--r-pill);margin-bottom:var(--s3);align-self:flex-start;
+}
+.branch-hours svg{width:15px;height:15px}
+.branch-row{display:flex;gap:11px;align-items:flex-start;font-size:.92rem;color:var(--charcoal-2);margin-bottom:10px;font-weight:500;line-height:1.5}
+.branch-row svg{width:17px;height:17px;flex:none;margin-top:3px;color:var(--pink-deep)}
+.branch-row a{color:var(--charcoal-2);transition:color .25s}
+.branch-row a:hover{color:var(--pink-deep)}
+.branch-socials{display:flex;gap:9px;margin:var(--s3) 0 var(--s4)}
+.branch-socials a{
+  width:40px;height:40px;border-radius:var(--r-sm);display:grid;place-items:center;
+  background:var(--pink-soft);color:var(--pink-deep);transition:.4s var(--ease);position:relative;
+}
+.branch-socials a:hover{background:var(--pink-deep);color:#fff;transform:translateY(-3px) scale(1.05)}
+.branch-socials svg{width:18px;height:18px}
+.branch-actions{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+.branch-actions .btn{flex:1;padding:14px 16px;font-size:.92rem;min-width:130px}
+.map-wrap{aspect-ratio:16/9;background:var(--cream-2);position:relative;border-top:1px solid rgba(74,74,74,.06)}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.95)}
+/* placeholder social (TikTok soon) */
+.branch-socials a[data-soon]{opacity:.4;cursor:not-allowed}
+.branch-socials a[data-soon]:hover{transform:none;background:var(--pink-soft);color:var(--pink-deep)}
+[data-soon]::after{
+  content:"Segera hadir";position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);
+  background:var(--ink);color:var(--cream);font-size:.64rem;font-weight:700;white-space:nowrap;
+  padding:4px 9px;border-radius:7px;opacity:0;pointer-events:none;transition:opacity .25s;letter-spacing:.02em;z-index:6;
+}
+[data-soon]:hover::after{opacity:1}
+
+/* ============================================================
+   KONTAK — dark, warm, refined
+   ============================================================ */
+.kontak{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+.kontak::before{content:"";position:absolute;top:-25%;right:-8%;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,var(--pink-deep) 0%,transparent 68%);opacity:.18}
+.kontak::after{content:"";position:absolute;bottom:-30%;left:-10%;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,var(--gold) 0%,transparent 70%);opacity:.07}
+.kontak-inner{padding:var(--s16) var(--s4);position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;width:100%}
+.kontak-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--s10);align-items:start}
+.kontak .eyebrow{color:var(--gold-soft)}
+.kontak .eyebrow::before{background:var(--gold-soft)}
+.kontak h2{color:var(--cream);font-size:clamp(2rem,3.6vw,2.9rem);margin:var(--s3) 0 0;font-weight:900;line-height:1.14}
+.kontak-lead{color:rgba(255,250,245,.74);font-size:1.08rem;margin:var(--s3) 0 var(--s6);max-width:46ch;font-weight:500;line-height:1.7}
+.kontak-info{display:flex;flex-direction:column;gap:var(--s3)}
+.ki{display:flex;gap:14px;align-items:flex-start}
+.ki .ico{width:46px;height:46px;border-radius:var(--r-sm);background:rgba(255,250,245,.07);display:grid;place-items:center;flex:none;border:1px solid rgba(255,250,245,.1)}
+.ki .ico svg{width:21px;height:21px;color:var(--gold-soft)}
+.ki b{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:4px;font-weight:800}
+.ki span,.ki a{color:var(--cream);font-weight:600;font-size:1rem}
+.ki a:hover{color:var(--pink)}
+
+.all-socials{margin-top:var(--s6)}
+.all-socials .lbl{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft);font-weight:800;margin-bottom:var(--s3)}
+.socials-branches{display:flex;flex-direction:column;gap:10px}
+.sb-item{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  background:rgba(255,250,245,.05);border:1px solid rgba(255,250,245,.1);
+  border-radius:var(--r-md);padding:13px 18px;transition:background .35s;
+}
+.sb-item:hover{background:rgba(255,250,245,.09)}
+.sb-name{font-weight:800;font-size:.92rem;color:var(--cream)}
+.sb-icons{display:flex;gap:9px;flex:none}
+.sb-icons a{
+  width:38px;height:38px;border-radius:var(--r-sm);display:grid;place-items:center;
+  background:rgba(255,250,245,.08);border:1px solid rgba(255,250,245,.12);
+  color:var(--cream);transition:.4s var(--ease);position:relative;
+}
+.sb-icons a:hover{background:var(--pink-deep);border-color:var(--pink-deep);color:#fff;transform:translateY(-3px)}
+.sb-icons a svg{width:18px;height:18px}
+.sb-icons a[data-soon]{opacity:.4;cursor:not-allowed}
+.sb-icons a[data-soon]:hover{transform:none;background:rgba(255,250,245,.08);border-color:rgba(255,250,245,.12);color:var(--cream)}
+
+/* WA card */
+.wa-card{
+  background:linear-gradient(155deg,#2bbf63 0%,#1f9f50 100%);border-radius:var(--r-xl);
+  padding:var(--s6) var(--s5);box-shadow:var(--sh-xl);position:relative;overflow:hidden;color:#fff;
+}
+.wa-card::after{content:"";position:absolute;bottom:-70px;right:-70px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.08)}
+.wa-card .wa-ico{width:60px;height:60px;border-radius:var(--r-md);background:rgba(255,255,255,.16);display:grid;place-items:center;margin-bottom:var(--s3)}
+.wa-card .wa-ico svg{width:34px;height:34px;color:#fff}
+.wa-card h3{color:#fff;font-size:1.5rem;margin-bottom:8px;font-weight:900}
+.wa-card p{color:rgba(255,255,255,.9);font-weight:500;margin-bottom:var(--s5);line-height:1.6}
+.admin-list{display:flex;flex-direction:column;gap:11px;position:relative;z-index:2}
+.admin-row{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);
+  border-radius:var(--r-md);padding:14px 16px;transition:background .35s,transform .35s var(--ease),box-shadow .35s;
+}
+.admin-row:hover{background:#fff;transform:translateY(-2px) scale(1.01);box-shadow:0 12px 26px rgba(0,0,0,.16)}
+.admin-info{display:flex;flex-direction:column;line-height:1.3;min-width:0}
+.admin-info b{font-weight:900;font-size:1rem;color:#fff;transition:color .3s}
+.admin-info span{font-size:.9rem;font-weight:600;color:rgba(255,255,255,.82);transition:color .3s}
+.admin-row:hover .admin-info b{color:#1f9f50}
+.admin-row:hover .admin-info span{color:#3c3c3c}
+.admin-go{display:inline-flex;align-items:center;gap:7px;flex:none;white-space:nowrap;background:#fff;color:#1f9f50;font-weight:800;font-size:.85rem;padding:9px 14px;border-radius:var(--r-pill);transition:background .3s,color .3s}
+.admin-go svg{width:16px;height:16px}
+.admin-row:hover .admin-go{background:#1f9f50;color:#fff}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{background:#3a3735;color:rgba(255,250,245,.66);padding:var(--s8) 0 var(--s6)}
+.foot-grid{display:flex;justify-content:space-between;align-items:center;gap:var(--s5);flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center}
+.foot-logo{height:60px;width:auto;display:block}
+.foot-nav{display:flex;gap:6px;flex-wrap:wrap}
+.foot-nav a{padding:8px 15px;border-radius:var(--r-pill);font-weight:700;font-size:.92rem;transition:.3s;color:rgba(255,250,245,.72)}
+.foot-nav a:hover{background:rgba(255,250,245,.1);color:var(--cream)}
+/* Footer social — TikTok per cabang, ringkas */
+.foot-social{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid rgba(255,250,245,.1)}
+.foot-social .fs-lbl{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,250,245,.5)}
+.foot-social .fs-lbl svg{width:16px;height:16px}
+.foot-social a{
+  display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:var(--r-pill);
+  background:rgba(255,250,245,.06);border:1px solid rgba(255,250,245,.12);
+  color:rgba(255,250,245,.82);font-weight:700;font-size:.84rem;transition:.4s var(--ease);
+}
+.foot-social a svg{width:15px;height:15px;flex:none}
+.foot-social a:hover{background:var(--cream);color:#1f1f1f;border-color:var(--cream);transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.22)}
+.foot-bottom{margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid rgba(255,250,245,.1);font-size:.84rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.foot-bottom b{color:var(--pink)}
+@media(max-width:560px){.foot-social{flex-direction:column;align-items:flex-start;gap:12px}}
+
+/* ============================================================
+   FLOATING WHATSAPP
+   ============================================================ */
+.fab{
+  position:fixed;bottom:26px;right:26px;z-index:900;
+  display:flex;align-items:center;background:#25D366;color:#fff;
+  border-radius:var(--r-pill);box-shadow:var(--glow-wa);overflow:hidden;
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease);font-weight:800;
+}
+.fab:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 20px 44px rgba(37,211,102,.5)}
+.fab .fab-ico{width:60px;height:60px;display:grid;place-items:center;flex:none;position:relative}
+.fab .fab-ico svg{width:29px;height:29px}
+.fab .fab-txt{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .5s var(--ease),padding .5s var(--ease);padding:0}
+.fab:hover .fab-txt{max-width:200px;padding-right:24px}
+.fab.pulse .fab-ico::after{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;animation:pulse 2.4s ease-out infinite;z-index:-1}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.8);opacity:0}}
+
+/* ============================================================
+   REVEAL — page-load + scroll
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.09s}.reveal.d2{transition-delay:.18s}.reveal.d3{transition-delay:.27s}.reveal.d4{transition-delay:.36s}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  body{animation:none}
+}
+
+/* ============================================================
+   ACCESSIBILITY & MICRO-INTERACTIONS — premium finishing
+   ============================================================ */
+/* Keyboard focus — visible, on-brand, never on mouse click */
+a:focus-visible,button:focus-visible{
+  outline:2.5px solid var(--pink-deep);outline-offset:3px;border-radius:8px;
+}
+.btn:focus-visible{outline-offset:4px}
+.hero-dot:focus-visible{outline:2px solid var(--pink-deep);outline-offset:4px}
+.cat-card:focus-visible{outline:2.5px solid var(--pink-deep);outline-offset:4px}
+
+/* Tactile press feedback on every action */
+.btn:active{transform:translateY(0) scale(.975)}
+.btn-wa:active{box-shadow:var(--glow-wa)}
+.cat-link:active{transform:scale(.96)}
+.branch-socials a:active,.sb-icons a:active,.admin-row:active{transform:scale(.97)}
+.fab:active{transform:scale(.97)}
+
+/* Catalog: refine number badge + image bloom on hover */
+.cat-card .cat-num{transition:transform .5s var(--ease),background .4s,color .4s}
+.cat-card:hover .cat-num{transform:scale(1.08);background:var(--pink-deep);color:#fff}
+.cat-card::after{
+  content:"";position:absolute;inset:6px;z-index:1;border-radius:calc(var(--r-lg) - 7px);
+  box-shadow:inset 0 0 0 1.5px rgba(255,255,255,0);transition:box-shadow .5s var(--ease);pointer-events:none;
+}
+.cat-card:hover::after{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.22)}
+
+/* Hero image: gentle parallax-lift on hover for a premium feel */
+.hv-main{transition:transform .7s var(--ease),box-shadow .7s var(--ease)}
+.hv-main:hover{transform:translateY(-4px);box-shadow:0 40px 84px rgba(74,74,74,.16),0 16px 32px rgba(74,74,74,.09)}
+
+/* Branch card photo: soft top-light sheen */
+.branch-photo::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.12),transparent 30%);
+}
+
+/* Why cards: lift the icon slightly with the card */
+.why-card .why-ico{transition:background .4s,color .4s,transform .5s var(--ease)}
+.why-card:hover .why-ico{transform:translateY(-2px) scale(1.04)}
+
+/* Smooth, shift-free image paint */
+.cat-card img,.branch-photo img,.hv-main img{background:var(--pink-mist)}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:1024px){
+  .hero-grid{gap:var(--s6)}
+  .why-grid{gap:var(--s3)}
+}
+@media(max-width:860px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+  .brand-logo{height:46px}
+  header.nav.scrolled .brand-logo{height:40px}
+  .hero{padding:130px 0 var(--s10)}
+  .hero-grid{grid-template-columns:1fr;gap:var(--s8)}
+  .hero-visual{height:420px;max-width:100%;margin:0 auto;width:100%}
+  .hv-main{left:0;border-radius:var(--r-lg)}
+  .hv-main-solo{left:0;border-radius:var(--r-lg)}
+  .hv-badge{top:auto;bottom:14px;right:14px;left:14px;width:max-content;max-width:calc(100% - 28px);margin-left:auto;padding:9px 12px;gap:8px}
+  .hv-badge b{font-size:.8rem}
+  .hv-badge span{font-size:.66rem}
+  .hv-badge .ring{width:30px;height:30px}
+  .hv-badge .ring{width:30px;height:30px}
+  .hero-copy{text-align:center}
+  .hero .eyebrow,.hero-since{justify-content:center}
+  .hero-sub,.lead{margin-left:auto;margin-right:auto}
+  .hero-actions,.hero-trustline{justify-content:center}
+  .why{padding:var(--s12) 0}
+  .why-grid{grid-template-columns:1fr}
+  .why-grid .why-card:first-child{flex-direction:column;text-align:center;align-items:center}
+  .katalog,.cabang{padding:var(--s12) 0}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .branch-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+  .kontak-inner{padding:var(--s12) var(--s4)}
+  .kontak-grid{grid-template-columns:1fr;gap:var(--s8)}
+  .cat-link{opacity:1;transform:none}
+}
+@media(max-width:560px){
+  .wrap{padding:0 var(--s3)}
+  .display{font-size:2.4rem}
+  .hero h1{font-size:2.3rem}
+  .hero-trustline{gap:var(--s3)}
+  .hero-trustline .ti b{font-size:1.6rem}
+  .hero-trustline .ti span{font-size:.68rem}
+  .hero-trustline .ti-div{height:34px}
+  .hero-visual{height:330px}
+  .hv-main{left:6%;border-radius:var(--r-md);border-width:4px}
+  .hv-thumb{width:34%;border-width:4px}
+  .hv-pill{display:none}
+  .cat-grid{grid-template-columns:1fr}
+  .foot-grid{flex-direction:column;align-items:flex-start}
+  .foot-bottom{flex-direction:column}
+  .fab .fab-txt{display:none}
+  .fab{bottom:18px;right:18px}
+  .btn{padding:15px 26px}
+  .sec-head{margin-bottom:var(--s8)}
+}
+
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="brand" aria-label="MY BABY — beranda">
+      <img src="images/toko/logo-1-removebg-preview.png" alt="MY BABY" class="brand-logo" decoding="async">
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#home">Beranda</a>
+      <a href="#katalog">Katalog</a>
+      <a href="#cabang">Cabang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-wa" href="#kontak">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35Z"/><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.85.86.86-2.78-.2-.31A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+        Chat Admin
+      </a>
+    </div>
+    <button class="burger" id="burger" aria-label="Buka menu"><span></span></button>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer">
+  <a href="#home">Beranda</a>
+  <a href="#katalog">Katalog</a>
+  <a href="#cabang">Cabang</a>
+  <a href="#kontak">Kontak</a>
+  <a class="btn btn-wa" href="#kontak">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.85.86.86-2.78-.2-.31A8.2 8.2 0 1 1 12 20.2Z"/><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51Z"/></svg>
+    Chat Admin
+  </a>
+</aside>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal">Sejak 2007 • Dipercaya Keluarga Kalimantan</span>
+      <h1 class="reveal d1">
+        Kebutuhan Si Kecil,<br>
+        <span class="accent">Dalam Satu Tempat Terpercaya</span>
+      </h1>
+      <p class="hero-sub reveal d2">
+        Pusat perlengkapan bayi terlengkap di Kalimantan. Fashion, MPASI, perlengkapan mandi, mainan edukasi, hingga kebutuhan ibu menyusui — semuanya original dan berkualitas.
+      </p>
+      <div class="hero-actions reveal d3">
+        <a class="btn btn-wa" href="#kontak">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.85.86.86-2.78-.2-.31A8.2 8.2 0 1 1 12 20.2Z"/><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51Z"/></svg>
+          Chat Admin via WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#katalog">Lihat Katalog</a>
+      </div>
+      <div class="hero-trustline reveal d4">
+        <div class="ti"><b>2007</b><span>Berdiri Sejak</span></div>
+        <span class="ti-div" aria-hidden="true"></span>
+        <div class="ti"><b>10.000<i>+</i></b><span>Produk Tersedia</span></div>
+        <span class="ti-div" aria-hidden="true"></span>
+        <div class="ti"><b>3</b><span>Cabang Kalimantan</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal d2">
+      <span class="hv-blob"></span>
+      <span class="float-dot" style="width:16px;height:16px;background:var(--gold-soft);top:6%;left:2%"></span>
+      <span class="float-dot fd2" style="width:24px;height:24px;background:var(--pink);bottom:12%;right:4%"></span>
+      <span class="float-dot fd3" style="width:11px;height:11px;background:var(--pink-deep);top:42%;left:-1%"></span>
+      <!-- Hero Carousel - full frame, no thumb -->
+      <figure class="hv-main hv-main-solo" id="heroCarousel" aria-live="polite">
+        <img src="images/unggulan/unggulan-1.jpeg"
+             alt="Produk unggulan MY BABY"
+             loading="eager" decoding="async" id="heroImg">
+      </figure>
+      <!-- Badge -->
+      <div class="hv-badge">
+        <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="#EE93A4" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div><b>Foto Asli Toko</b><span>Real product, real experience</span></div>
+      </div>
+      <!-- Carousel dots -->
+      <div class="hero-dots" id="heroDots"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== MARQUEE STRIP ===================== -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Fashion Bayi &amp; Anak</span><span>MPASI</span><span>Toiletries</span><span>Perlengkapan Bayi</span><span>Perlengkapan Renang</span><span>Toys</span><span>Aksesories</span><span>Travel</span><span>Ibu Hamil &amp; Menyusui</span><span>Buka 07.30 – 22.00 WITA</span>
+    <span>Fashion Bayi &amp; Anak</span><span>MPASI</span><span>Toiletries</span><span>Perlengkapan Bayi</span><span>Perlengkapan Renang</span><span>Toys</span><span>Aksesories</span><span>Travel</span><span>Ibu Hamil &amp; Menyusui</span><span>Buka 07.30 – 22.00 WITA</span>
+  </div>
+</div>
+
+<!-- ===================== WHY MY BABY ===================== -->
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow center reveal">Kenapa MY BABY?</span>
+      <h2 class="h-sec reveal d1">Tempat ternyaman untuk<br>kebutuhan si kecil</h2>
+      <p class="lead reveal d2">Lebih dari sekadar toko — kami teman tepercaya para orang tua di Kalimantan sejak 2007.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Berpengalaman Sejak 2007</h3>
+        <p>Lebih dari 18 tahun melayani keluarga Kalimantan dengan produk pilihan dan terpercaya.</p>
+      </div>
+      <div class="why-card reveal d1">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+        <h3>Koleksi Terlengkap</h3>
+        <p>Ribuan pilihan produk dalam 9 kategori lengkap, dari fashion sampai mainan edukasi. Semua kebutuhan bayi ada di satu tempat.</p>
+      </div>
+      <div class="why-card reveal d2">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 7l2 13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2L21 7M8 7V5a4 4 0 0 1 8 0v2"/></svg></div>
+        <h3>Produk Berkualitas</h3>
+        <p>Brand pilihan & barang asli — bukan foto stok. Apa yang Anda lihat, itu yang tersedia di rak.</p>
+      </div>
+      <div class="why-card reveal d3">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg></div>
+        <h3>Pesan Mudah via WA</h3>
+        <p>Tanya stok, harga, atau pesan langsung lewat WhatsApp. Cepat, ramah, tanpa ribet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KATALOG ===================== -->
+<section class="katalog" id="katalog">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow center reveal">Katalog Produk</span>
+      <h2 class="h-sec reveal d1">Apa yang Anda cari?</h2>
+      <p class="lead reveal d2">Pilih kategori, lalu langsung tanyakan ke kami via WhatsApp untuk ketersediaan, varian, dan harga terbaru.</p>
+    </div>
+    <div class="cat-grid">
+
+      <!-- 1. Fashion Bayi & Anak -->
+      <a class="cat-card reveal" href="#cabang"
+         data-photos='["images/katalog/fashion-1.jpeg","images/katalog/fashion-2.jpeg","images/katalog/fashion-3.jpeg","images/katalog/fashion-4.jpeg","images/katalog/fashion-5.jpeg"]'>
+        <img src="images/katalog/fashion-1.jpeg" alt="Fashion bayi dan anak - pakaian, sepatu, aksesori" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">1</span>
+        <div class="cat-overlay">
+          <h3>Fashion Bayi &amp; Anak</h3>
+          <p>Pakaian, sepatu, aksesori &amp; fashion terkini</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 2. MPASI -->
+      <a class="cat-card reveal d1" href="#cabang"
+         data-photos='["images/katalog/mpasi-1.jpeg","images/katalog/mpasi-2.jpeg","images/katalog/mpasi-3.jpeg","images/katalog/mpasi-4.jpeg"]'>
+        <img src="images/katalog/mpasi-1.jpeg" alt="MPASI - Makanan Pendamping ASI untuk bayi" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">2</span>
+        <div class="cat-overlay">
+          <h3>MPASI</h3>
+          <p>Makanan bayi, bubur, &amp; nutrisi pendamping ASI</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 3. Toiletries -->
+      <a class="cat-card reveal d2" href="#cabang"
+         data-photos='["images/katalog/toiletries-1.jpeg","images/katalog/toiletries-2.jpeg","images/katalog/toiletries-3.jpeg","images/katalog/toiletries-4.jpeg"]'>
+        <img src="images/katalog/toiletries-1.jpeg" alt="Toiletries bayi - sabun, shampoo, perawatan" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">3</span>
+        <div class="cat-overlay">
+          <h3>Toiletries</h3>
+          <p>Sabun, shampoo, body wash &amp; perawatan bayi</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 4. Perlengkapan Bayi Besar -->
+      <a class="cat-card reveal" href="#cabang"
+         data-photos='["images/katalog/perlengkapan-bayi-1.jpeg","images/katalog/perlengkapan-bayi-2.jpeg","images/katalog/perlengkapan-bayi-3.jpeg","images/katalog/perlengkapan-bayi-4.jpeg"]'>
+        <img src="images/katalog/perlengkapan-bayi-1.jpeg" alt="Perlengkapan bayi besar - sprei, bedding, perlengkapan tidur" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">4</span>
+        <div class="cat-overlay">
+          <h3>Perlengkapan Bayi Besar</h3>
+          <p>Sprei, bedding, selimut &amp; kebutuhan tidur bayi</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 5. Perlengkapan Renang -->
+      <a class="cat-card reveal d1" href="#cabang"
+         data-photos='["images/katalog/renang-1.jpeg","images/katalog/renang-2.jpeg","images/katalog/renang-3.jpeg","images/katalog/renang-4.jpeg"]'>
+        <img src="images/katalog/renang-1.jpeg" alt="Perlengkapan renang bayi dan anak" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">5</span>
+        <div class="cat-overlay">
+          <h3>Perlengkapan Renang</h3>
+          <p>Baju renang, pelampung &amp; aksesori air bayi</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 6. Toys -->
+      <a class="cat-card reveal d2" href="#cabang"
+         data-photos='["images/katalog/toys-1.jpeg","images/katalog/toys-2.jpeg","images/katalog/toys-3.jpeg","images/katalog/toys-4.jpeg"]'>
+        <img src="images/katalog/toys-1.jpeg" alt="Mainan edukasi bayi dan boneka anak" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">6</span>
+        <div class="cat-overlay">
+          <h3>Toys</h3>
+          <p>Mainan edukasi, boneka &amp; permainan anak</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 7. Aksesories -->
+      <a class="cat-card reveal" href="#cabang"
+         data-photos='["images/katalog/aksesories-1.jpeg","images/katalog/aksesories-2.jpeg","images/katalog/aksesories-3.jpeg","images/katalog/aksesories-4.jpeg"]'>
+        <img src="images/katalog/aksesories-1.jpeg" alt="Aksesori bayi - keychian, tas, aksesoris lucu" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">7</span>
+        <div class="cat-overlay">
+          <h3>Aksesories</h3>
+          <p>Keychian, tas, gelang &amp; aksesoris bayi lucu</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 8. Travel -->
+      <a class="cat-card reveal d1" href="#cabang"
+         data-photos='["images/katalog/travel-1.jpg","images/katalog/travel-2.jpg","images/katalog/travel-3.jpg","images/katalog/travel-4.jpg"]'>
+        <img src="images/katalog/travel-1.jpg" alt="Perlengkapan travel - stroller, gendongan, car seat" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">8</span>
+        <div class="cat-overlay">
+          <h3>Travel</h3>
+          <p>Stroller, gendongan, car seat &amp; tas bepergian</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+      <!-- 9. Ibu Hamil & Menyusui -->
+      <a class="cat-card reveal d2" href="#cabang"
+         data-photos='["images/katalog/ibu-hamil-1.jpeg","images/katalog/ibu-hamil-2.jpeg","images/katalog/ibu-hamil-3.jpeg"]'>
+        <img src="images/katalog/ibu-hamil-1.jpeg" alt="Produk ibu hamil dan menyusui" class="cat-img" loading="lazy" decoding="async">
+        <span class="cat-num">9</span>
+        <div class="cat-overlay">
+          <h3>Ibu Hamil &amp; Menyusui</h3>
+          <p>Breast pump, kantong ASI, baju hamil &amp; aksesoris</p>
+          <span class="cat-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Tanya via WhatsApp</span>
+        </div>
+      </a>
+
+    </div>
+    <p class="katalog-note reveal">Tidak menemukan yang Anda cari? <b>Chat kami langsung</b> — stok kami jauh lebih lengkap dari yang terlihat di sini. 💬</p>
+  </div>
+</section>
+
+<!-- ===================== CABANG ===================== -->
+<section class="cabang" id="cabang">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow center reveal">3 Cabang Kami</span>
+      <h2 class="h-sec reveal d1">Kunjungi toko terdekat</h2>
+      <p class="lead reveal d2">Tersebar di Kalimantan Utara &amp; Timur. Buka setiap hari <b>07.30 – 22.00 WITA</b>. Mampir atau chat dulu, kami siap bantu!</p>
+      <span class="family-badge reveal d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 0 1 0 10h-2"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        Part of <b>My Baby</b> Family Store
+      </span>
+    </div>
+    <div class="branch-grid">
+
+      <!-- BERAU -->
+      <article class="branch-card reveal">
+        <div class="branch-photo">
+          <img src="images/toko/toko-berau-exterior-2.jpg" alt="Toko My Baby Berau tampak depan" class="branch-img" loading="lazy" decoding="async">
+          <span class="branch-tag">Berau</span>
+        </div>
+        <div class="branch-body">
+          <h3>My Baby Berau</h3>
+          <span class="branch-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>07.30 – 22.00 WITA</span>
+          <div class="branch-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Kabupaten Berau, Kalimantan Timur</span></div>
+          <div class="branch-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><a href="mailto:mybabyberau@gmail.com">mybabyberau@gmail.com</a></div>
+          <div class="branch-socials">
+            <a href="https://instagram.com/mybabyberau" target="_blank" rel="noopener" aria-label="Instagram My Baby Berau" data-net="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/Mybabyberau" target="_blank" rel="noopener" aria-label="Facebook My Baby Berau" data-net="fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2h-2.5C11.5 2 10 3.8 10 6.5V9H8v3.5h2V22h3.5v-9.5H16l.5-3.5H13.5Z"/></svg></a>
+            <a href="https://www.tiktok.com/@mybabyberau" target="_blank" rel="noopener" aria-label="TikTok My Baby Berau" data-net="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.6 2.6 0 1 1-2.6-2.6c.18 0 .35.02.52.05V9.6a5.7 5.7 0 1 0 5.08 5.67V8.6a6.3 6.3 0 0 0 3.7 1.2V6.7a3.3 3.3 0 0 1-3.2-3.4V2Z"/></svg></a>
+          </div>
+          <div class="branch-actions">
+            <a class="btn btn-wa" href="https://wa.me/6282158416509?text=Halo%20admin%2C%20saya%20ingin%20bertanya%20tentang%20produk%20My%20Baby." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Chat Admin Berau
+            </a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta My Baby Berau"
+            src="https://maps.google.com/maps?q=My%20Baby%20Berau%20perlengkapan%20bayi&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </article>
+
+      <!-- BULUNGAN -->
+      <article class="branch-card reveal d1">
+        <div class="branch-photo">
+          <img src="images/toko/toko-bulungan-exterior.jpg" alt="Toko Mall Baby Bulungan tampak depan" class="branch-img" loading="lazy" decoding="async">
+          <span class="branch-tag">Bulungan</span>
+        </div>
+        <div class="branch-body">
+          <h3>Mall Baby Bulungan</h3>
+          <span class="branch-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>07.30 – 22.00 WITA</span>
+          <div class="branch-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Tanjung Selor, Kabupaten Bulungan, Kalimantan Utara</span></div>
+          <div class="branch-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><a href="mailto:mallbabytanjung@gmail.com">mallbabytanjung@gmail.com</a></div>
+          <div class="branch-socials">
+            <a href="https://instagram.com/mall_babybulungan" target="_blank" rel="noopener" aria-label="Instagram Mall Baby Bulungan" data-net="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/people/Mall-Baby-Bulungan/" target="_blank" rel="noopener" aria-label="Facebook Mall Baby Bulungan" data-net="fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2h-2.5C11.5 2 10 3.8 10 6.5V9H8v3.5h2V22h3.5v-9.5H16l.5-3.5H13.5Z"/></svg></a>
+            <a href="https://www.tiktok.com/@mallbabybulungan" target="_blank" rel="noopener" aria-label="TikTok Mall Baby Bulungan" data-net="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.6 2.6 0 1 1-2.6-2.6c.18 0 .35.02.52.05V9.6a5.7 5.7 0 1 0 5.08 5.67V8.6a6.3 6.3 0 0 0 3.7 1.2V6.7a3.3 3.3 0 0 1-3.2-3.4V2Z"/></svg></a>
+          </div>
+          <div class="branch-actions">
+            <a class="btn btn-wa" href="https://wa.me/6281257220004?text=Halo%20admin%2C%20saya%20ingin%20bertanya%20tentang%20produk%20My%20Baby." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Chat Admin Bulungan
+            </a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta Mall Baby Bulungan"
+            src="https://maps.google.com/maps?q=Mall%20Baby%20Tanjung%20Selor%20Bulungan&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </article>
+
+      <!-- MALINAU -->
+      <article class="branch-card reveal d2">
+        <div class="branch-photo">
+          <img src="images/toko/toko-malinau-exterior-.jpeg" alt="Toko Mall Baby Malinau tampak depan" class="branch-img" loading="lazy" decoding="async">
+          <span class="branch-tag">Malinau</span>
+        </div>
+        <div class="branch-body">
+          <h3>Mall Baby Malinau</h3>
+          <span class="branch-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>07.30 – 22.00 WITA</span>
+          <div class="branch-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Kabupaten Malinau, Kalimantan Utara</span></div>
+          <div class="branch-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><a href="mailto:mallbabymalinau@gmail.com">mallbabymalinau@gmail.com</a></div>
+          <div class="branch-socials">
+            <a href="https://instagram.com/mallBabyShop" target="_blank" rel="noopener" aria-label="Instagram Mall Baby Malinau" data-net="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/Mallbaby.Malinau" target="_blank" rel="noopener" aria-label="Facebook Mall Baby Malinau" data-net="fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2h-2.5C11.5 2 10 3.8 10 6.5V9H8v3.5h2V22h3.5v-9.5H16l.5-3.5H13.5Z"/></svg></a>
+            <a href="https://www.tiktok.com/@mallbaby_malinau" target="_blank" rel="noopener" aria-label="TikTok Mall Baby Malinau" data-net="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.6 2.6 0 1 1-2.6-2.6c.18 0 .35.02.52.05V9.6a5.7 5.7 0 1 0 5.08 5.67V8.6a6.3 6.3 0 0 0 3.7 1.2V6.7a3.3 3.3 0 0 1-3.2-3.4V2Z"/></svg></a>
+          </div>
+          <div class="branch-actions">
+            <a class="btn btn-wa" href="https://wa.me/6282190345255?text=Halo%20admin%2C%20saya%20ingin%20bertanya%20tentang%20produk%20My%20Baby." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Chat Admin Malinau
+            </a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta Mall Baby Malinau"
+            src="https://maps.google.com/maps?q=Mall%20Baby%20Malinau%20perlengkapan%20bayi&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KONTAK ===================== -->
+<section class="kontak" id="kontak">
+  <div class="wrap kontak-inner">
+    <div class="kontak-grid">
+      <div class="kontak-left">
+        <span class="eyebrow reveal">Hubungi Kami</span>
+        <h2 class="reveal d1">Siap melayani<br>kebutuhan si kecil</h2>
+        <p class="kontak-lead reveal d2">Punya pertanyaan soal produk, stok, atau harga? Tim kami fast response di WhatsApp setiap hari, jam 07.30 – 22.00 WITA.</p>
+        <div class="kontak-info reveal d3">
+          <div class="ki">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><b>Jam Operasional</b><span>Setiap hari · 07.30 – 22.00 WITA</span></div>
+          </div>
+          <div class="ki">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><b>Lokasi</b><span>Berau · Bulungan · Malinau — Kalimantan</span></div>
+          </div>
+          <div class="ki">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+            <div><b>WhatsApp Admin</b><span>Nomor berbeda tiap cabang — lihat daftarnya</span></div>
+          </div>
+        </div>
+
+        <div class="all-socials reveal d3">
+          <div class="lbl">Ikuti Sosial Media Cabang Kami</div>
+          <div class="socials-branches">
+
+            <div class="sb-item">
+              <span class="sb-name">My Baby Berau</span>
+              <div class="sb-icons">
+                <a href="https://instagram.com/mybabyberau" target="_blank" rel="noopener" aria-label="Instagram My Baby Berau" data-net="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+                <a href="https://www.facebook.com/Mybabyberau" target="_blank" rel="noopener" aria-label="Facebook My Baby Berau" data-net="fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2h-2.5C11.5 2 10 3.8 10 6.5V9H8v3.5h2V22h3.5v-9.5H16l.5-3.5H13.5Z"/></svg></a>
+                <a href="https://www.tiktok.com/@mybabyberau" target="_blank" rel="noopener" aria-label="TikTok My Baby Berau" data-net="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.6 2.6 0 1 1-2.6-2.6c.18 0 .35.02.52.05V9.6a5.7 5.7 0 1 0 5.08 5.67V8.6a6.3 6.3 0 0 0 3.7 1.2V6.7a3.3 3.3 0 0 1-3.2-3.4V2Z"/></svg></a>
+              </div>
+            </div>
+
+            <div class="sb-item">
+              <span class="sb-name">Mall Baby Bulungan</span>
+              <div class="sb-icons">
+                <a href="https://instagram.com/mall_babybulungan" target="_blank" rel="noopener" aria-label="Instagram Mall Baby Bulungan" data-net="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+                <a href="https://www.facebook.com/people/Mall-Baby-Bulungan/" target="_blank" rel="noopener" aria-label="Facebook Mall Baby Bulungan" data-net="fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2h-2.5C11.5 2 10 3.8 10 6.5V9H8v3.5h2V22h3.5v-9.5H16l.5-3.5H13.5Z"/></svg></a>
+                <a href="https://www.tiktok.com/@mallbabybulungan" target="_blank" rel="noopener" aria-label="TikTok Mall Baby Bulungan" data-net="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.6 2.6 0 1 1-2.6-2.6c.18 0 .35.02.52.05V9.6a5.7 5.7 0 1 0 5.08 5.67V8.6a6.3 6.3 0 0 0 3.7 1.2V6.7a3.3 3.3 0 0 1-3.2-3.4V2Z"/></svg></a>
+              </div>
+            </div>
+
+            <div class="sb-item">
+              <span class="sb-name">Mall Baby Malinau</span>
+              <div class="sb-icons">
+                <a href="https://instagram.com/mallBabyShop" target="_blank" rel="noopener" aria-label="Instagram Mall Baby Malinau" data-net="ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+                <a href="https://www.facebook.com/Mallbaby.Malinau" target="_blank" rel="noopener" aria-label="Facebook Mall Baby Malinau" data-net="fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 .5-1.5 1.5-1.5H17V2h-2.5C11.5 2 10 3.8 10 6.5V9H8v3.5h2V22h3.5v-9.5H16l.5-3.5H13.5Z"/></svg></a>
+                <a href="https://www.tiktok.com/@mallbaby_malinau" target="_blank" rel="noopener" aria-label="TikTok Mall Baby Malinau" data-net="tt"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.6 2.6 0 1 1-2.6-2.6c.18 0 .35.02.52.05V9.6a5.7 5.7 0 1 0 5.08 5.67V8.6a6.3 6.3 0 0 0 3.7 1.2V6.7a3.3 3.3 0 0 1-3.2-3.4V2Z"/></svg></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="wa-card reveal d2">
+        <div class="wa-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.85.86.86-2.78-.2-.31A8.2 8.2 0 1 1 12 20.2Z"/><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51Z"/></svg></div>
+        <h3>Chat Admin per Cabang</h3>
+        <p>Pilih cabang terdekat, lalu chat langsung admin-nya. Respon cepat &amp; ramah setiap hari 07.30–22.00 WITA.</p>
+        <div class="admin-list">
+          <a class="admin-row" href="https://wa.me/6282158416509?text=Halo%20admin%2C%20saya%20ingin%20bertanya%20tentang%20produk%20My%20Baby." target="_blank" rel="noopener">
+            <span class="admin-info"><b>My Baby Berau</b><span>+62 821-5841-6509</span></span>
+            <span class="admin-go"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Chat Admin</span>
+          </a>
+          <a class="admin-row" href="https://wa.me/6281257220004?text=Halo%20admin%2C%20saya%20ingin%20bertanya%20tentang%20produk%20My%20Baby." target="_blank" rel="noopener">
+            <span class="admin-info"><b>Mall Baby Bulungan</b><span>+62 812-5722-0004</span></span>
+            <span class="admin-go"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Chat Admin</span>
+          </a>
+          <a class="admin-row" href="https://wa.me/6282190345255?text=Halo%20admin%2C%20saya%20ingin%20bertanya%20tentang%20produk%20My%20Baby." target="_blank" rel="noopener">
+            <span class="admin-info"><b>Mall Baby Malinau</b><span>+62 821-9034-5255</span></span>
+            <span class="admin-go"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Z"/></svg> Chat Admin</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a href="#home" class="foot-brand">
+        <img src="images/toko/logo-1-removebg-preview.png" alt="MY BABY" class="foot-logo" decoding="async">
+      </a>
+      <nav class="foot-nav">
+        <a href="#home">Beranda</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#cabang">Cabang</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#kontak">WhatsApp</a>
+      </nav>
+    </div>
+    <div class="foot-social">
+      <span class="fs-lbl"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.6 2.6 0 1 1-2.6-2.6c.18 0 .35.02.52.05V9.6a5.7 5.7 0 1 0 5.08 5.67V8.6a6.3 6.3 0 0 0 3.7 1.2V6.7a3.3 3.3 0 0 1-3.2-3.4V2Z"/></svg> TikTok</span>
+      <a href="https://www.tiktok.com/@mybabyberau" target="_blank" rel="noopener" aria-label="TikTok My Baby Berau">@mybabyberau</a>
+      <a href="https://www.tiktok.com/@mallbabybulungan" target="_blank" rel="noopener" aria-label="TikTok Mall Baby Bulungan">@mallbabybulungan</a>
+      <a href="https://www.tiktok.com/@mallbaby_malinau" target="_blank" rel="noopener" aria-label="TikTok Mall Baby Malinau">@mallbaby_malinau</a>
+    </div>
+    <div class="foot-bottom">
+      <span>Pusat Perlengkapan Bayi Terlengkap di Kalimantan · Sejak <b>2007</b></span>
+      <span>© <span id="year"></span> MY BABY. Berau · Bulungan · Malinau.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING WHATSAPP ===================== -->
+<a class="fab pulse" id="fab" href="#kontak" aria-label="Chat Admin Cabang">
+  <span class="fab-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.45A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.85.86.86-2.78-.2-.31A8.2 8.2 0 1 1 12 20.2Z"/><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51Z"/></svg></span>
+  <span class="fab-txt">Chat Kami</span>
+</a>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var burger=document.getElementById('burger');
+  var drawer=document.getElementById('drawer');
+  var scrim=document.getElementById('scrim');
+
+  // scrolled navbar
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY>30); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // mobile drawer
+  function closeDrawer(){ burger.classList.remove('open'); drawer.classList.remove('open'); scrim.classList.remove('open'); document.body.style.overflow=''; }
+  burger.addEventListener('click', function(){
+    var open=drawer.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    scrim.classList.toggle('open', open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  scrim.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeDrawer); });
+
+  // scroll reveal
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // active nav link on scroll
+  var sections=['home','katalog','cabang','kontak'].map(function(id){return document.getElementById(id);});
+  var links=document.querySelectorAll('.nav-links a');
+  var spy=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('href')==='#'+e.target.id); });
+      }
+    });
+  }, {threshold:.4});
+  sections.forEach(function(s){ if(s) spy.observe(s); });
+
+  // stop FAB pulse after first scroll
+  var fab=document.getElementById('fab');
+  window.addEventListener('scroll', function once(){ fab.classList.remove('pulse'); window.removeEventListener('scroll', once); }, {passive:true});
+
+  // year
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  // ============================================================
+  // HERO CAROUSEL
+  // ============================================================
+  var heroPhotos=[
+    'images/unggulan/unggulan-1.jpeg',
+    'images/unggulan/unggulan-2.jpeg',
+    'images/unggulan/unggulan-3.jpeg',
+    'images/unggulan/pakaian-2-enhanced.jpeg'
+  ];
+  var heroIdx=0;
+  var heroImg=document.getElementById('heroImg');
+  var heroDotsEl=document.getElementById('heroDots');
+
+  // build dots
+  heroPhotos.forEach(function(_, i){
+    var d=document.createElement('button');
+    d.className='hero-dot'+(i===0?' active':'');
+    d.setAttribute('aria-label','Foto '+(i+1));
+    d.addEventListener('click',function(){ goHero(i); });
+    heroDotsEl.appendChild(d);
+  });
+
+  function updateHeroDots(idx){
+    heroDotsEl.querySelectorAll('.hero-dot').forEach(function(d,i){ d.classList.toggle('active',i===idx); });
+  }
+
+  function goHero(idx){
+    if(idx===heroIdx) return;
+    heroIdx=idx;
+    heroImg.classList.add('slide-out');
+    setTimeout(function(){
+      heroImg.src=heroPhotos[heroIdx];
+      heroImg.classList.remove('slide-out');
+      heroImg.classList.add('slide-in');
+      heroImg.addEventListener('animationend',function(){ heroImg.classList.remove('slide-in'); },{once:true});
+      updateHeroDots(heroIdx);
+    }, 300);
+  }
+
+  var heroTimer=setInterval(function(){
+    goHero((heroIdx+1)%heroPhotos.length);
+  }, 1300);
+
+  // pause on hover
+  var heroEl=document.getElementById('heroCarousel');
+  if(heroEl){
+    heroEl.addEventListener('mouseenter',function(){ clearInterval(heroTimer); });
+    heroEl.addEventListener('mouseleave',function(){
+      heroTimer=setInterval(function(){ goHero((heroIdx+1)%heroPhotos.length); }, 1300);
+    });
+  }
+
+  // ============================================================
+  // KATALOG CAROUSEL
+  // Desktop: slides on hover · Mobile: auto-slides while in view
+  // One shared slide routine, defensive guards, frames preloaded
+  // ============================================================
+  (function initKatalogCarousel(){
+    var cards = document.querySelectorAll('.cat-card[data-photos]');
+    if(!cards.length) return;
+    var SPEED = 1300, FADE = 300;
+
+    cards.forEach(function(card){
+      // Parse photo list safely
+      var photos;
+      try { photos = JSON.parse(card.getAttribute('data-photos') || '[]'); }
+      catch(err){ photos = []; }
+      if(!Array.isArray(photos) || photos.length < 2) return;
+
+      var img = card.querySelector('.cat-img');
+      if(!img) return;
+
+      // Preload the remaining frames so each slide is instant & shift-free
+      photos.slice(1).forEach(function(src){ var pre = new Image(); pre.src = src; });
+
+      var idx = 0, timer = null, running = false;
+
+      function slideTo(next){
+        if(next === idx) return;
+        idx = next;
+        img.classList.add('slide-out-l');
+        setTimeout(function(){
+          img.src = photos[idx];
+          img.classList.remove('slide-out-l');
+          img.classList.add('slide-in-r');
+          img.addEventListener('animationend', function(){ img.classList.remove('slide-in-r'); }, {once:true});
+        }, FADE);
+      }
+      function start(){
+        if(running) return;
+        running = true;
+        timer = setInterval(function(){ slideTo((idx + 1) % photos.length); }, SPEED);
+      }
+      function stop(){
+        running = false;
+        clearInterval(timer);
+      }
+
+      // Desktop: hover to play
+      card.addEventListener('mouseenter', start);
+      card.addEventListener('mouseleave', stop);
+
+      // Expose controls for the mobile in-view observer
+      card._slider = { start: start, stop: stop };
+    });
+
+    // Pause every running carousel when the tab is hidden (no janky catch-up)
+    document.addEventListener('visibilitychange', function(){
+      if(!document.hidden) return;
+      cards.forEach(function(c){ if(c._slider) c._slider.stop(); });
+    });
+
+    // Mobile: auto-slide whichever card is currently in view
+    if('IntersectionObserver' in window){
+      var mq = window.matchMedia('(max-width:767px)');
+      var io = new IntersectionObserver(function(entries){
+        if(!mq.matches) return;
+        entries.forEach(function(e){
+          var s = e.target._slider;
+          if(!s) return;
+          if(e.isIntersecting) s.start(); else s.stop();
+        });
+      }, {threshold:.5});
+      cards.forEach(function(c){ if(c._slider) io.observe(c); });
+    }
+  })();
+
+})();
+</script>
+
+</body>
+</html>
